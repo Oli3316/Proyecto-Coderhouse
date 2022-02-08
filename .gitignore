@@ -1,0 +1,7 @@
+node_modules/
+package.json/
+package-lock.json/
+
+git remote add origin https://github.com/Oli3316/mi_repositorio.git
+git branch -M main
+git push -u origin main

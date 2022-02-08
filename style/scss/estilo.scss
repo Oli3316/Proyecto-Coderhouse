@@ -1,0 +1,85 @@
+@import "_spaces.scss";
+
+$blue: blue;
+$pepe: 16px;
+$juan: 4px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+/*body*/
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(84, 84, 84),
+    rgb(135, 135, 135)
+  );
+  background-repeat: no-repeat;
+
+  .seccion1 {
+    .seccion1__carousel {
+      margin: 0 $pepe ($juan * 4) $pepe;
+    }
+  }
+
+  .seccion2 {
+    .seccion2__texto {
+      margin-left: 39px;
+    }
+  }
+
+  .seccion3 {
+    .seccion3__card {
+      width: 18rem !important;
+    }
+  }
+}
+
+/*nav*/
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav-link {
+  background-size: 0% 3px;
+  background-image: linear-gradient(to right, yellow, orange, red);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-size: 100% 3px;
+}
+
+.navbar {
+  z-index: 1;
+}
+
+/*parrafos*/
+.p-1 {
+  font-size: large;
+  line-height: ($pepe * 2);
+}
+.p-2 {
+  font-size: large;
+  line-height: ($pepe * 2);
+}
+
+/*Footer*/
+footer {
+  // height: 100px;
+}
+
+.footerHr {
+  height: $juan;
+}

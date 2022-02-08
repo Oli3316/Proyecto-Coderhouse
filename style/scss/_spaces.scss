@@ -1,0 +1,10 @@
+@for $value from 0 to 100 {
+  .ancho-#{$value} {
+    width: #{$value + "%"};
+  }
+  .alto-#{$value} {
+    height: #{$value + "%"};
+  }
+}
+
+@each $value in 
