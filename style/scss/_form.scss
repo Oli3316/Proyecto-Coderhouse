@@ -1,0 +1,53 @@
+/*formulario ubicacion*/
+#contact {
+  background: #f9f9f9;
+  padding: 57px;
+  width: 100%;
+  display: block;
+  margin-left: 0px;
+  max-width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #000;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #f15a24;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  height: 43px;
+}
+
+.parrafo-form {
+  justify-content: center;
+  font-family: "Merriweather", serif;
+}
+
+.titulo-u {
+  margin: 53px 41px 52px 10px;
+  text-align: center;
+}
+
+.par-u {
+  margin: 22px 0px 40px 0px;
+}
+
+.map {
+  height: 500px;
+  width: 100%;
+}

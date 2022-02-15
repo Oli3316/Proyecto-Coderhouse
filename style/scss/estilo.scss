@@ -1,8 +1,14 @@
 @import "_spaces.scss";
+@import "_nav.scss";
+@import "_btn.scss";
+@import "_carousel.scss";
+@import "_imagenes.scss";
+@import "_form.scss";
 
 $blue: blue;
 $pepe: 16px;
 $juan: 4px;
+
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +21,13 @@ html {
 
 /*body*/
 body {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(84, 84, 84),
-    rgb(135, 135, 135)
-  );
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   background-repeat: no-repeat;
+  min-height: 100vh;
+
+  div .seccion1 {
+    margin: 16px 0px 0px -21px;
+  }
 
   .seccion1 {
     .seccion1__carousel {
@@ -37,49 +44,77 @@ body {
   .seccion3 {
     .seccion3__card {
       width: 18rem !important;
+      background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+      padding: 10px;
     }
   }
 }
 
-/*nav*/
-header {
-  position: sticky;
-  top: 0px;
-  z-index: 10;
-  width: 100%;
-}
-
-.nav-link {
-  background-size: 0% 3px;
-  background-image: linear-gradient(to right, yellow, orange, red);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  transition: 0.5s;
-}
-
-a:hover {
-  background-size: 100% 3px;
-}
-
-.navbar {
-  z-index: 1;
-}
-
 /*parrafos*/
-.p-1 {
+.par-1 {
   font-size: large;
   line-height: ($pepe * 2);
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #979797;
 }
-.p-2 {
-  font-size: large;
-  line-height: ($pepe * 2);
+
+.par-2 {
+  @extend .par-1;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #979797;
+}
+
+/*titulos*/
+
+.titulo-index {
+  .titulo-index__tittle {
+    font-family: "Merriweather", serif;
+    color: #a2a2a2;
+  }
 }
 
 /*Footer*/
-footer {
-  // height: 100px;
-}
-
 .footerHr {
   height: $juan;
+}
+
+.pie-redes {
+  .pie-redes__titulo {
+    margin: -20px 0px -19px 6px;
+  }
+  .pie-redes__footer {
+    margin: -57px;
+  }
+}
+
+.redes {
+  margin: 80px 0px 0px 0px;
+  background-color: aliceblue;
+  width: 100%;
+}
+
+hr .footerHr {
+  padding: 3px;
+  background-color: black !important;
+}
+
+iframe {
+  height: 100%;
+}
+
+@media (max-width: 528px) {
+  img {
+    width: 200px;
+  }
+  footer {
+    font-size: small;
+  }
+}
+
+@media (max-width: 728px) {
+  img {
+    display: flex;
+  }
 }

@@ -6,5 +6,18 @@
     height: #{$value + "%"};
   }
 }
+$colors: (
+  "red": #ff0000,
+  "green": #00ff00,
+  "blue": #0000ff,
+);
 
-@each $value in 
+@each $color in $colors {
+  .h1-#{$color} {
+    color: #{$color};
+  }
+}
+
+iframe {
+  margin: 8px;
+}
