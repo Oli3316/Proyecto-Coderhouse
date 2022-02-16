@@ -4,14 +4,6 @@ header {
   top: 0px;
   z-index: 10;
   width: 100%;
-  background-image: linear-gradient(
-    to top,
-    #d5d4d0 0%,
-    #d5d4d0 1%,
-    #eeeeec 31%,
-    #efeeec 75%,
-    #e9e9e7 100%
-  );
   margin-top: -13px;
 }
 
@@ -20,15 +12,18 @@ header {
   background-image: linear-gradient(to right, yellow, orange, red);
   background-repeat: no-repeat;
   background-position: left bottom;
-  transition: 0.5s;
+  transition: 1s;
   font-family: "Merriweather", serif;
   font-size: 25px;
 }
 
 .navbar-brand {
   font-size: 25px;
+  color: #d5d4d0;
+  font-weight: 300;
+  font-family: fangsong;
+  font-size: xx-large;
 }
-
 a:hover {
   background-size: 100% 3px;
 }
@@ -39,6 +34,10 @@ a:hover {
 
 .encabezado {
   .encabezado__nav {
-    margin: 10px;
+    margin: 0px;
+    background-color: currentColor;
+    a {
+      color: #d5d4d0;
+    }
   }
 }
