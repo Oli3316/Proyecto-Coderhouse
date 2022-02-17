@@ -830,8 +830,8 @@ header {
   background-image: linear-gradient(to right, yellow, orange, red);
   background-repeat: no-repeat;
   background-position: left bottom;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-family: "Merriweather", serif;
   font-size: 25px;
 }
@@ -861,6 +861,10 @@ a:hover {
   color: #d5d4d0;
 }
 
+.encabezado .encabezado__nav li {
+  margin-left: 26px;
+}
+
 .seccion3 .seccion3__btn .btn-primary {
   background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
   color: black;
@@ -877,7 +881,7 @@ a:hover {
 }
 
 .btn-sube {
-  margin: -61px 0px 0px 6px;
+  margin: -35px 0px 0px 0px;
   background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
   color: black;
   font-weight: 600;
@@ -909,11 +913,13 @@ a:hover {
 /*formulario ubicacion*/
 #contact {
   background: #f9f9f9;
-  padding: 57px;
-  width: 100%;
+  padding: 23px;
+  width: 800px;
   display: block;
   margin-left: 0px;
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 #contact input[type="text"],
@@ -1026,12 +1032,23 @@ body .seccion3 .seccion3__card {
   height: 4px;
 }
 
+.pie-redes .nonblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-decoration: none;
+  margin: 0px 0px 0px 0px;
+}
+
 .pie-redes .pie-redes__titulo {
   margin: 8px 0px 16px 8px;
 }
 
 .pie-redes .pie-redes__footer {
-  margin: 0px 0px 0px 0px;
+  margin: -46px 0px 0px 0px;
 }
 
 .redes {

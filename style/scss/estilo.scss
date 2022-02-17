@@ -81,11 +81,17 @@ body {
 }
 
 .pie-redes {
+  .nonblock {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    margin: 0px 0px 0px 0px;
+  }
   .pie-redes__titulo {
     margin: 8px 0px 16px 8px;
   }
   .pie-redes__footer {
-    margin: 0px 0px 0px 0px;
+    margin: -46px 0px 0px 0px;
   }
 }
 

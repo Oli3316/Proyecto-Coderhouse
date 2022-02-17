@@ -15,60 +15,66 @@
     <link rel="stylesheet" href="../style/css/estilo.css" />
     <link rel="stylesheet" href="../style/scss/estilo.scss" />
   </head>
-  <header class="encabezado">
-    <div class="container-fluid px-0 position-sticky">
-      <div class="row">
-        <div class="col">
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container-fluid">
-              <a class="navbar-brand fs-4">Loft San Pedro</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div
-                class="collapse navbar-collapse justify-content-end"
-                id="navbarNav"
-              >
-                <div class="col-md d-flex justify-content-end fs-5s">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./ubicacion.html">Ubicación</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./fotos.html">Fotos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                  </ul>
+  <body id="comienzo">
+    <header class="encabezado">
+      <div class="encabezado__nav container-fluid px-0 position-sticky">
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <h1 class="navbar-brand logo">Loft San Pedro</h1>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse justify-content-end"
+                  id="navbarNav"
+                >
+                  <div class="col-md d-flex justify-content-end fs-5">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html"
+                          >Servicios</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/ubicacion.html"
+                          >Ubicación</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/fotos.html">Fotos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html"
+                          >Contacto</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <body>
+    </header>
     <div class="container">
       <div class="row ">
-        <div class="col">
-          <h1 class="titulo-u">Contactanos!</h1>
-          <p class="par-u">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis voluptas, molestias porro id nobis unde possimus quos sunt error tempora eum ea blanditiis. Soluta laudantium sapiente tempora sequi amet?</p>
+        <div class="col titulo-index">
+          <h1 class="titulo-u titulo-index__tittle">Contactanos!</h1>
+          <p class="par-u par-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis voluptas, molestias porro id nobis unde possimus quos sunt error tempora eum ea blanditiis. Soluta laudantium sapiente tempora sequi amet?</p>
           <div>
         </div>
         <form id="contact" action="contacto.php" method="post">
@@ -122,20 +128,31 @@
       </div>
       </div>
     </div>
-  </body>
     <footer class="redes">
       <hr class="footerHr">
-      <div class="container py-5">
-        <div class="row py-4 pie-redes">
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 pie-redes__footer">
-            <h4 class="pie-redes__titulo">Lofts San Pedro</h4>
-            <ul class="list-inline mt-4">
-              <li class="list-inline-item"><a href="#" target="_blank" title="Google"><img src="https://img.icons8.com/ios-glyphs/60/000000/google-logo--v1.png"/><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><img src="https://img.icons8.com/ios-glyphs/60/000000/facebook-new.png"/><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><img src="https://img.icons8.com/ios-glyphs/60/000000/instagram-new.png"/><i class="fa fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="gmail"><img src="https://img.icons8.com/ios-glyphs/60/000000/gmail.png"/></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
-            </ul>
+      <div class="row py-4 pie-redes">
+        <div class="mb-5 row boton-sube">
+          <a class="nonblock nontext anim_swing museBGSize grpelem shared_content" id="u66012" href="#comienzo" data-content-guid="u66012_content"><button type="button" class="btn btn-primary btn-sube">Sube!</button></a>
+        </div>
+        <div class="d-block text-center pie-redes__footer">
+          <h4 class="pie-redes__titulo">Lofts en San Pedro</h4>
+          <div class="row d-block">
+            <a href="#" target="_blank" title="Google"><img src="https://img.icons8.com/ios-glyphs/60/000000/google-logo--v1.png"/><i class="fa fa-twitter"></i></a></li>
+            <a href="#" target="_blank" title="facebook"><img src="https://img.icons8.com/ios-glyphs/60/000000/facebook-new.png"/><i class="fa fa-facebook"></i></a></li>
+            <a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"><img src="https://img.icons8.com/ios-glyphs/60/000000/instagram-new.png"/></i></a></li>
+            <a href="#" target="_blank" title="gmail"><img src="https://img.icons8.com/ios-glyphs/60/000000/gmail.png"/></a></li>
           </div>
+        </div>     
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          © 2020 Copyright:
+          <a class="text-black" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </div>
     </footer>
+    <script
+    src="js/bootsrap.bundle.min.js"
+  ></script>
+      </body>
 </html>
