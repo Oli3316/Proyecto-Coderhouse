@@ -21,3 +21,25 @@ $colors: (
 iframe {
   margin: 8px;
 }
+
+.par-transferencia {
+  h2 {
+    margin: 10px 0px 0px 72px;
+  }
+  .par-transferencia__titulo {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .p-white {
+    color: white;
+    font-size: 20px;
+  }
+  span {
+    font-size: 20px;
+    color: white;
+    .t-black {
+      font-weight: bold;
+    }
+  }
+}

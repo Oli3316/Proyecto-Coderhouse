@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../style/css/estilo.css" />
     <link rel="stylesheet" href="../style/scss/estilo.scss" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   </head>
   <body id="comienzo">
     <header class="encabezado animate__animated animate__fadeInDown">
@@ -16,7 +21,7 @@
           <div class="col">
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
-                <h1 class="navbar-brand logo">Loft San Pedro</h1>
+                <a class="navbar-brand logo" href="#comienzo">Loft San Pedro</a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -67,6 +72,7 @@
     <div class="container mt-5">
       <iframe
         class="map"
+        id="map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.0796628464923!2d-59.7404136856435!3d-33.6550976807158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba22ef60d03267%3A0x32b1544c02dd1326!2sApart%20Club%20San%20Pedro!5e0!3m2!1ses-419!2sar!4v1644519218032!5m2!1ses-419!2sar"
         width="600"
         height="450"
@@ -91,54 +97,53 @@
           </ul>
         </p>
       </div>
-      <form id="contact" action="contacto.php" method="post">
-        <fieldset>
+        <form id="contact" action="contacto.php" method="post">
           <fieldset>
+            <fieldset>
+              <input
+                name="nombre"
+                placeholder="Tu nombre"
+                type="text"
+                tabindex="1"
+                required=""
+              />
+            </fieldset>
             <input
-              name="nombre"
-              placeholder="Tu nombre"
-              type="text"
-              tabindex="1"
+              name="email"
+              placeholder="Tu email"
+              type="email"
+              tabindex="2"
               required=""
-              autofocus=""
             />
           </fieldset>
-          <input
-            name="email"
-            placeholder="Tu email"
-            type="email"
-            tabindex="2"
-            required=""
-          />
-        </fieldset>
-        <fieldset>
-          <input
-            name="teléfono"
-            placeholder="Tu teléfono"
-            type="tel"
-            tabindex="2"
-            required=""
-          />
-        </fieldset>
-        <fieldset>
-          <textarea
-            name="mensaje"
-            placeholder="Escribe tu mensaje...."
-            tabindex="5"
-            required=""
-          ></textarea>
-        </fieldset>
-        <fieldset>
-          <button
+          <fieldset>
+            <input
+              name="teléfono"
+              placeholder="Tu teléfono"
+              type="tel"
+              tabindex="2"
+              required=""
+            />
+          </fieldset>
+          <fieldset>
+            <textarea
+              name="mensaje"
+              placeholder="Escribe tu mensaje...."
+              tabindex="5"
+              required=""
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <button
+            class="btn-sube-formulario"
             name="submit"
             type="submit"
-            id="contact-submit"
             data-submit="...Enviar"
-          >
-            Enviar
-          </button>
-        </fieldset>
-      </form>
+            >
+              Enviar
+            </button>
+          </fieldset>
+        </form>
     </div>
     <footer class="redes">
       <hr class="footerHr">
@@ -149,10 +154,10 @@
         <div class="d-block text-center pie-redes__footer">
           <h4 class="pie-redes__titulo">Lofts en San Pedro</h4>
           <div class="row d-block">
-            <a href="#" target="_blank" title="Google"><img src="https://img.icons8.com/ios-glyphs/60/000000/google-logo--v1.png"/><i class="fa fa-twitter"></i></a></li>
-            <a href="#" target="_blank" title="facebook"><img src="https://img.icons8.com/ios-glyphs/60/000000/facebook-new.png"/><i class="fa fa-facebook"></i></a></li>
-            <a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"><img src="https://img.icons8.com/ios-glyphs/60/000000/instagram-new.png"/></i></a></li>
-            <a href="#" target="_blank" title="gmail"><img src="https://img.icons8.com/ios-glyphs/60/000000/gmail.png"/></a></li>
+            <a href="#" target="_blank" title="Google"><img src="https://img.icons8.com/ios-glyphs/60/000000/google-logo--v1.png"/></a></li>
+            <a href="#" target="_blank" title="facebook"><img src="https://img.icons8.com/ios-glyphs/60/000000/facebook-new.png"/></a></li>
+            <a href="#" target="_blank" title="instagram"><img src="https://img.icons8.com/ios-glyphs/60/000000/instagram-new.png"/></a></li>
+            <a href="#" target="_blank" title="gmail"><img  src="https://img.icons8.com/ios-glyphs/60/000000/gmail.png"/></a></li>
           </div>
         </div>     
         <!-- Copyright -->
@@ -164,7 +169,7 @@
       </div>
     </footer>
     <script
-    src="js/bootsrap.bundle.min.js"
+    src="../bootstrap-5.1.3-dist/js/bootstrap.js"
   ></script>
   </body>
 </html>

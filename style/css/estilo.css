@@ -814,6 +814,30 @@ iframe {
   margin: 8px;
 }
 
+.par-transferencia h2 {
+  margin: 10px 0px 0px 72px;
+}
+
+.par-transferencia .par-transferencia__titulo {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.par-transferencia .p-white {
+  color: white;
+  font-size: 20px;
+}
+
+.par-transferencia span {
+  font-size: 20px;
+  color: white;
+}
+
+.par-transferencia span .t-black {
+  font-weight: bold;
+}
+
 /*nav*/
 header {
   position: -webkit-sticky;
@@ -822,26 +846,31 @@ header {
   z-index: 10;
   width: 100%;
   margin-top: -13px;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
 .nav-link {
   background-size: 0% 3px;
-  background-image: -webkit-gradient(linear, left top, right top, from(yellow), color-stop(orange), to(red));
-  background-image: linear-gradient(to right, yellow, orange, red);
+  background-image: -webkit-gradient(linear, left top, right top, from(#e9e9e9), color-stop(#dddddd), to(aliceblue));
+  background-image: linear-gradient(to right, #e9e9e9, #dddddd, aliceblue);
   background-repeat: no-repeat;
   background-position: left bottom;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-family: "Merriweather", serif;
-  font-size: 25px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  font-family: "Montserrat", Sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding: 10px;
 }
 
 .navbar-brand {
-  font-size: 25px;
-  color: #d5d4d0;
-  font-weight: 300;
-  font-family: fangsong;
-  font-size: xx-large;
+  font-family: "Montserrat", Sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 9px;
 }
 
 a:hover {
@@ -888,38 +917,80 @@ a:hover {
   border: 3px;
 }
 
+.btn-sube-formulario {
+  background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  font-weight: 600;
+  border: 1px;
+  width: 300px;
+  margin: 8px 44px 1px 300px;
+  border-radius: 10px;
+  height: 34px;
+}
+
+.btn-sube-formulario:hover {
+  color: white;
+}
+
 .carousel-inner {
   height: 446px;
   border-radius: 21px;
 }
 
-.imagenes-servicios {
-  margin: 44px;
+.seccion4 .seccion4__card {
+  height: 300px;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
-.imagenes-servicios img {
-  padding: 8px;
-  background-color: white;
+.card-img-top-233 {
+  width: 265px;
+  height: 250px;
 }
 
-.imagenes-servicios .img-p {
-  width: 50%;
+.fotos-hover {
+  width: 100%;
+  background: #888787;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(136, 135, 135, 0)), color-stop(49%, black), to(#787878));
+  background: linear-gradient(90deg, rgba(136, 135, 135, 0) 0%, black 49%, #787878 100%);
+  padding-left: 54px;
 }
 
-.imagenes-servicios .img-border {
-  border: 45px solid white;
+.img-hover {
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.img-hover:hover {
+  -webkit-transform: scaleX(2) scaleY(2);
+          transform: scaleX(2) scaleY(2);
+  margin-top: 150px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.img-hover-left:hover {
+  -webkit-transform: scaleX(2) scaleY(2) !important;
+          transform: scaleX(2) scaleY(2) !important;
+  margin-left: 120px;
+  margin-top: 150px;
+}
+
+.img-hover-right:hover {
+  -webkit-transform: scaleX(2) scaleY(2) !important;
+          transform: scaleX(2) scaleY(2) !important;
+  margin-left: -120px;
+  margin-top: 150px;
 }
 
 /*formulario ubicacion*/
 #contact {
   background: #f9f9f9;
   padding: 23px;
-  width: 800px;
-  display: block;
-  margin-left: 0px;
-  max-width: 100%;
-  display: block;
   margin: auto;
+  margin: -20px 75px 38px 75px;
 }
 
 #contact input[type="text"],
@@ -934,6 +1005,7 @@ a:hover {
   padding: 10px;
 }
 
+/*
 #contact button[type="submit"] {
   cursor: pointer;
   width: 100%;
@@ -945,8 +1017,7 @@ a:hover {
   font-size: 15px;
   border-radius: 20px;
   height: 43px;
-}
-
+}*/
 .parrafo-form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -966,6 +1037,10 @@ a:hover {
 .map {
   height: 500px;
   width: 100%;
+}
+
+#form {
+  margin: 0px 75px 0px 75px;
 }
 
 * {
@@ -1051,6 +1126,15 @@ body .seccion3 .seccion3__card {
   margin: -46px 0px 0px 0px;
 }
 
+.pie-redes img:hover {
+  -webkit-transform: scale(1.25, 1.25);
+          transform: scale(1.25, 1.25);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
 .redes {
   margin: 80px 0px 0px 0px;
   background-color: aliceblue;
@@ -1064,22 +1148,5 @@ hr .footerHr {
 
 iframe {
   height: 100%;
-}
-
-@media (max-width: 528px) {
-  img {
-    width: 200px;
-  }
-  footer {
-    font-size: small;
-  }
-}
-
-@media (max-width: 728px) {
-  img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 /*# sourceMappingURL=estilo.css.map */

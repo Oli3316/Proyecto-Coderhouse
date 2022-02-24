@@ -93,6 +93,10 @@ body {
   .pie-redes__footer {
     margin: -46px 0px 0px 0px;
   }
+  img:hover {
+    transform: scale(1.25, 1.25);
+    transition: transform 0.5s;
+  }
 }
 
 .redes {
@@ -108,19 +112,4 @@ hr .footerHr {
 
 iframe {
   height: 100%;
-}
-
-@media (max-width: 528px) {
-  img {
-    width: 200px;
-  }
-  footer {
-    font-size: small;
-  }
-}
-
-@media (max-width: 728px) {
-  img {
-    display: flex;
-  }
 }

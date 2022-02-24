@@ -2,12 +2,8 @@
 #contact {
   background: #f9f9f9;
   padding: 23px;
-  width: 800px;
-  display: block;
-  margin-left: 0px;
-  max-width: 100%;
-  display: block;
   margin: auto;
+  margin: -20px 75px 38px 75px;
 }
 
 #contact input[type="text"],
@@ -21,7 +17,7 @@
   margin: 0 0 5px;
   padding: 10px;
 }
-
+/*
 #contact button[type="submit"] {
   cursor: pointer;
   width: 100%;
@@ -33,7 +29,7 @@
   font-size: 15px;
   border-radius: 20px;
   height: 43px;
-}
+}*/
 
 .parrafo-form {
   justify-content: center;
@@ -52,4 +48,8 @@
 .map {
   height: 500px;
   width: 100%;
+}
+
+#form {
+  margin: 0px 75px 0px 75px;
 }

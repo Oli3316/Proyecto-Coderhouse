@@ -1,13 +1,42 @@
-.imagenes-servicios {
-  margin: 44px;
-  img {
-    padding: 8px;
-    background-color: white;
-  }
-  .img-p {
-    width: 50%;
-  }
-  .img-border {
-    border: 45px solid white;
-  }
+.card-img-top-233 {
+  width: 265px;
+  height: 250px;
+}
+
+.fotos-hover {
+  width: 100%;
+  background: rgb(136, 135, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(136, 135, 135, 0) 0%,
+    rgba(0, 0, 0, 1) 49%,
+    rgba(120, 120, 120, 1) 100%
+  );
+  padding-left: 54px;
+}
+
+.img-hover {
+  width: 300px;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.img-hover:hover {
+  transform: scaleX(2) scaleY(2);
+  margin-top: 150px;
+  transition: 2s;
+}
+
+.img-hover-left:hover {
+  transform: scaleX(2) scaleY(2) !important;
+  margin-left: 120px;
+  margin-top: 150px;
+}
+
+.img-hover-right:hover {
+  transform: scaleX(2) scaleY(2) !important;
+  margin-left: -120px;
+  margin-top: 150px;
 }
