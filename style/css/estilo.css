@@ -814,6 +814,10 @@ iframe {
   margin: 8px;
 }
 
+.par-transferencia {
+  background-color: black;
+}
+
 .par-transferencia h2 {
   margin: 10px 0px 0px 72px;
 }
@@ -920,11 +924,11 @@ a:hover {
 .btn-sube-formulario {
   background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
   font-weight: 600;
-  border: 1px;
-  width: 300px;
-  margin: 8px 44px 1px 300px;
-  border-radius: 10px;
-  height: 34px;
+  border: 6px;
+  width: 96px;
+  margin: 13px 0px 0px 1px;
+  border-radius: 5px;
+  height: 35px;
 }
 
 .btn-sube-formulario:hover {
@@ -989,8 +993,7 @@ a:hover {
 #contact {
   background: #f9f9f9;
   padding: 23px;
-  margin: auto;
-  margin: -20px 75px 38px 75px;
+  width: 87%;
 }
 
 #contact input[type="text"],

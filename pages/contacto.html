@@ -83,61 +83,65 @@
           <h1 class="titulo-u titulo-index__tittle  animate__animated animate__fadeInRight">Contactanos!</h1>
           <!--logos de contacto-->
           <div class="col">
-            <div class="animate__animated animate__fadeInRight d-flex">
-             
-            </div>
+
           <!--logos de contacto-->
+
           </div>
           <div>
         </div>
-        <form id="contact" action="contacto.php" method="post">
-          <fieldset>
+
+        <!--Formulario-->
+
+        <div class="col-md-6 d-flex justify-content-center w-100">
+          <form id="contact" action="contacto.php" method="post">
+            <fieldset>
+              <fieldset>
+                <input
+                name="nombre"
+                placeholder="Tu nombre"
+                  type="text"
+                  tabindex="1"
+                  required=""
+                  autofocus=""
+                  />
+              </fieldset>
+              <input
+                name="email"
+                placeholder="Tu email"
+                type="email"
+                tabindex="2"
+                required=""
+              />
+            </fieldset>
             <fieldset>
               <input
-              name="nombre"
-              placeholder="Tu nombre"
-                type="text"
-                tabindex="1"
+                name="teléfono"
+                placeholder="Tu teléfono"
+                type="tel"
+                tabindex="2"
                 required=""
-                autofocus=""
                 />
             </fieldset>
-            <input
-              name="email"
-              placeholder="Tu email"
-              type="email"
-              tabindex="2"
-              required=""
-            />
-          </fieldset>
-          <fieldset>
-            <input
-              name="teléfono"
-              placeholder="Tu teléfono"
-              type="tel"
-              tabindex="2"
-              required=""
-              />
-          </fieldset>
-          <fieldset>
-            <textarea
-            name="mensaje"
-              placeholder="Escribe tu mensaje...."
-              tabindex="5"
-              required=""
-              ></textarea>
+            <fieldset>
+              <textarea
+              name="mensaje"
+                placeholder="Escribe tu mensaje...."
+                tabindex="5"
+                required=""
+                ></textarea>
+              </fieldset>
+            <fieldset>
+              <button
+                class="btn-sube-formulario"
+                name="submit"
+                type="submit"
+                data-submit="...Enviar"
+                >
+                Enviar
+              </button>
             </fieldset>
-          <fieldset>
-            <button
-              class="btn-sube-formulario"
-              name="submit"
-              type="submit"
-              data-submit="...Enviar"
-              >
-              Enviar
-            </button>
-          </fieldset>
-        </form>
+          </form>
+        </div>
       </div>
       </div>
       <div class="transferencia par-transferencia">
