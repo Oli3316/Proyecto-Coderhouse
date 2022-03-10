@@ -25,27 +25,24 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 
-  div .seccion1 {
-    margin: 16px 0px 0px -21px;
-  }
-
-  .seccion1 {
-    .seccion1__carousel {
-      margin: 0 $pepe ($juan * 4) $pepe;
-    }
-  }
-
-  .seccion2 {
+  /* .seccion2 {
     .seccion2__texto {
       margin-left: 39px;
     }
-  }
+  }*/
 
   .seccion3 {
     .seccion3__card {
       width: 18rem !important;
       background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
       padding: 10px;
+    }
+  }
+
+  .seccion4 {
+    .seccion4__card {
+      height: 100%;
+      box-shadow: 10px 5px 5px black;
     }
   }
 }
@@ -56,14 +53,14 @@ body {
   line-height: ($pepe * 2);
   font-family: "Lexend Deca", sans-serif;
   font-family: "Montserrat", sans-serif;
-  color: #979797;
+  color: #d8d8d8;
 }
 
 .par-2 {
   @extend .par-1;
   font-family: "Lexend Deca", sans-serif;
   font-family: "Montserrat", sans-serif;
-  color: #979797;
+  color: #d8d8d8;
 }
 
 /*titulos*/
@@ -71,7 +68,7 @@ body {
 .titulo-index {
   .titulo-index__tittle {
     font-family: "Merriweather", serif;
-    color: #a2a2a2;
+    color: #d8d8d8;
   }
 }
 
